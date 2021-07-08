@@ -4,14 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class PhysicalTutorGroupMeeting extends TutorGroupMeeting{
+public class PhysicalTutorGroupMeeting {
 
 	private static final int NUMBER_OF_HOMEWORK_PRESENTATIONS = 3;
 	private final String room;
+	private final TimeSlot timeSlot;
+	private final TutorGroup tutorGroup;
+	private Skill skillToPractice;
 
 	public PhysicalTutorGroupMeeting(TimeSlot timeSlot, TutorGroup tutorGroup, Skill skillToPractice, String room) {
-		super(timeSlot,tutorGroup,skillToPractice);
+		this.timeSlot = timeSlot;
+		this.tutorGroup = tutorGroup;
+		this.skillToPractice = skillToPractice;
 		this.room = room;
+	}
+
+	public TutorGroup getTutorGroup() {
+		return tutorGroup;
+	}
+
+	public Skill getSkillToPractice() {
+		return skillToPractice;
+	}
+
+	public TimeSlot getTimeSlot() {
+		return timeSlot;
 	}
 
 	public String getRoom() {
