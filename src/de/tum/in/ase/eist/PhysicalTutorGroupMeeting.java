@@ -49,7 +49,6 @@ public class PhysicalTutorGroupMeeting {
 			}
 			int randomIndex = ThreadLocalRandom.current().nextInt(homeworkPresentationCandidates.size());
 			Student randomStudent = homeworkPresentationCandidates.get(randomIndex);
-			randomStudent.presentHomework();
 			homeworkPresentationCandidates.remove(randomIndex);
 		}
 
