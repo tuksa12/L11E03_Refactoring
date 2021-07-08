@@ -67,7 +67,6 @@ public class PhysicalTutorGroupMeeting {
 
 		tutor.say("Let's have a look at the new homework");
 		tutor.say("Thank you that you have participated in " + room + " today.");
-		tutor.say("See you next time!");
 	}
 
 }
