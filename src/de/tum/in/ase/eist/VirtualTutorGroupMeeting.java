@@ -65,5 +65,6 @@ public class VirtualTutorGroupMeeting {
 		tutor.say("Let's have a look at the new homework");
 
 		tutor.say("Thank you that you have participated using the " + url + " today.");
+		tutor.say("See you next time!");
 	}
 }
