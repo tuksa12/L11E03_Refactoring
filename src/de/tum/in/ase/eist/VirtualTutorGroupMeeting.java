@@ -55,6 +55,10 @@ public class VirtualTutorGroupMeeting {
 			homeworkPresentationCandidates.remove(randomIndex);
 		}
 
+		for (Student student : homeworkPresentationCandidates) {
+			student.presentHomework();
+		}
+
 		tutor.say("Next is the group work");
 		Skill skill = getSkillToPractice();
 		skill.apply();
